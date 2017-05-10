@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      #ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.HSQLDialect
+        format_sql: true
+  datasource:
+    url: jdbc:hsqldb:file:johnny-scrape-db/db/data;shutdown=true;hsqldb.write_delay=false;
+    driverClassName: org.hsqldb.jdbcDriver
+    username: sa
+    password:
